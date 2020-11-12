@@ -1,0 +1,22 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olga Illarionova",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myau5x/note_taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Myau5x/note_taker/issues"
+  },
+  "homepage": "https://github.com/Myau5x/note_taker#readme",
+  "description": ""
+}
