@@ -30,7 +30,7 @@ module.exports = function(app){
             console.log(x);
             fs.writeFile(path.join(__dirname, "../db/db.json"),JSON.stringify(x), (err)=>{
                 if (err) throw err;
-                console.log("write something");
+                console.log("write new note");
             })
         }) 
         res.json({ ok: true });
@@ -40,11 +40,12 @@ module.exports = function(app){
         fs.readFile(path.join(__dirname, "../db/db.json"),'utf8',(err,data)=>{
             if (err) throw err;
             let x = JSON.parse(data);
-            x.forEach(element => {
-                if(element.id === req.params.id){
-                    console.log(element);
-                }
-            });
+            let y = x.filter((el)=>{return el.id!=req.params.id});
+            console.log(y);
+            fs.writeFile(path.join(__dirname, "../db/db.json"),JSON.stringify(y), (err)=>{
+                if (err) throw err;
+                console.log("write without deleted");
+            })
         })
         res.json({ok:true});
     })
