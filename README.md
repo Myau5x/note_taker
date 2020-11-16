@@ -17,10 +17,13 @@ To use do next:
 ## License
 [License: MIT](https://opensource.org/licenses/MIT)
 ## Deatiled description
-App deployed at [heroku](https://shrouded-stream-05696.herokuapp.com/)
+App deployed at [heroku](https://shrouded-stream-05696.herokuapp.com/).
+
 Note taking page looks like
-[!this](./screenshots/notes.png)
+![this](./screenshots/notes.png)
+
 App allows to create new notes, to look at content of old notes and to delete notes.
+
 When a note is created app gives it unique ID (next after last note has). This ID used when I delete nodes.
 ## Files
 - `public` - static files for site and frontend script
